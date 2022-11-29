@@ -29,8 +29,10 @@
         <TextView
             android:id="@+id/subtitle_parent"
             android:fontFamily="@font/signik_negative_regular"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/end_date"
+            android:layout_marginEnd="8dp"
             app:layout_constraintTop_toBottomOf="@id/title_parent"
             app:layout_constraintStart_toStartOf="@id/title_parent"
             tools:text="Твоя цель: 55kg"/>
@@ -65,6 +67,7 @@
             android:layout_marginTop="8dp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
-            android:orientation="horizontal"/>
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

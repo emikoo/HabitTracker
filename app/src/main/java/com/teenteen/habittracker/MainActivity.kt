@@ -29,5 +29,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupFAB() {
         val fab: ExtendedFloatingActionButton = findViewById(R.id.fab)
+        fab.setOnClickListener {
+            val bottomSheetDialogFragment: BottomSheetDialogFragment =
+                AddBottomSheet()
+            bottomSheetDialogFragment.isCancelable = true
+            bottomSheetDialogFragment.show(
+                supportFragmentManager,
+                bottomSheetDialogFragment.tag
+            )
+        }
     }
 }

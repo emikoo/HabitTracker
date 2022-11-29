@@ -10,7 +10,5 @@
 
     <color name="red">#DB6258</color>
     <color name="orange">#F98564</color>
-    <color name="pink">#F26D8C</color>
-    <color name="purpur">#DB58B8</color>
-    <color name="purple">#E664F9</color>
+    <color name="dark_red">#78332D</color>
 </resources>

@@ -21,13 +21,13 @@ data class Habit(
 val defaultArray by lazy {
     arrayListOf<Habit>(
         Habit(1, "Какая-то цель", "28.11.2022",
-            "31.12.2022", "55kg", defaultDayList),
+            "31.12.2022", "Примечание", defaultDayList),
         Habit(2, "Другая цель", "28.11.2022",
-            "31.12.2022", "55kg", defaultDayList3),
+            "31.12.2022", "Дескрипшн", defaultDayList3),
         Habit(3, "Новая привычка", "28.11.2022",
-            "31.12.2022", "55kg", defaultDayList2),
+            "31.12.2022", "Нужно то то то", defaultDayList2),
         Habit(4, "Еще одна привычка", "28.11.2022",
-            "31.12.2022", "55kg", defaultDayList4)
+            "31.12.2022", "Какой-то текст", defaultDayList4)
     )
 }
 

@@ -10,6 +10,9 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class AddBottomSheet(): BottomSheetDialogFragment() {
+
+    override fun getTheme(): Int = R.style.BottomSheetDialogTheme
+
     override fun onCreateView(
         inflater: LayoutInflater ,
         container: ViewGroup? ,
@@ -20,7 +23,7 @@ class AddBottomSheet(): BottomSheetDialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val dialog = BottomSheetDialog(requireContext() , theme)
-        dialog.setOnShowListener {
+        dialog.setOnShowListener { it ->
             val bottomSheetDialog = it as BottomSheetDialog
             val parentLayout =
                 bottomSheetDialog.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet)
